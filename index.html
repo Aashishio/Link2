@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form signup">
+            <h2>Sign Up</h2>
+            <div class="inputBox">
+                <input type="text" id="usrname" required>
+                <i class="fa-regular fa-user"></i>
+                <span>username</span>
+            </div>
+            <div class="inputBox">
+                <input type="number" id="number" required>
+                <i class="fa-solid fa-phone"></i>
+                <span>mobile number</span>
+            </div>
+            <div class="inputBox">
+                <input type="password" id="ent" required>
+                <i class="fa-solid fa-lock"></i>
+                <span>create password</span>
+                <i class="fa-solid fa-eye eye" id="eye3" onclick="f1()"></i>
+                <i class="fa-solid fa-eye-slash eye e1" id="eye4" onclick="f4()"></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" id="password" required>
+                <i class="fa-solid fa-lock"></i>
+                <span>confirm password</span>
+                <i class="fa-solid fa-eye eye jdg" id="eye" onclick="f2()"></i>
+                <i class="fa-solid fa-eye-slash eye e2" id="eye2" onclick="f3()"></i>
+            </div>
+            <div class="inputBox">
+                <input type="button" id="st" value="Create Account" onclick="he()">
+            </div>
+            <p>Already a member ? <a href="#" class="login">Login</a></p>
+        </div>
+        
+        <!-- Signup -->
+
+        <div class="form signin">
+            <h2>Sign In</h2>
+            <div class="inputBox">
+                <input type="text" id="snpusrname" required>
+                <i class="fa-regular fa-user"></i>
+                <span>username</span>
+            </div>
+            <div class="inputBox">
+                <input type="password" id="snppass" required>
+                <i class="fa-solid fa-lock"></i>
+                <i class="fa-solid fa-eye eye jdg" id="eye11" onclick="fi2()"></i>
+                <i class="fa-solid fa-eye-slash eye e2" id="eye22" onclick="fi3()"></i>
+                <span>password</span>
+            </div>
+            <div class="inputBox">
+                <input type="button" onclick="Login()" value="Create Account">
+            </div>
+            <p>Not Registered ? <a href="#" class="create">Create an account</a></p>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
